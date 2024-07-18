@@ -46,10 +46,6 @@ When("I go to the shopping cart", () => {
     shoppingCartPage.goToShoppingCart.click();
 })
 
-When("I remove the first item from the shopping cart", () => {
-
-})
-
 When("I go to checkout", () => {
     shoppingCartPage.goToCheckout.click();
 })
@@ -78,4 +74,8 @@ When("I enter the following values into the form:", (infoToEnter: DataTable) => 
 
 When("I choose {string} as a payment method", (payment: string) => {
     checkoutPage.selectPaymentMethod.select(payment);
+})
+
+When("I click on the checkout button", () => {
+    checkoutPage.checkoutButton.click();
 })

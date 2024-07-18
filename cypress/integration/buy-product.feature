@@ -18,3 +18,4 @@ Feature: Buy products
       | Email             | First Name | Last Name | Country     | City   | Postcode | Address        |
       | sara.heine@gmx.de | Sara       | Heine     | Deutschland | Berlin | 11111    | Wilhelminenhof |
     And I choose "PayPal" as a payment method
+    And I click on the checkout button
